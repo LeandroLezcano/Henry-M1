@@ -4,7 +4,7 @@ function BinarioADecimal(num) {
   // tu codigo aca
   // Necesito separar los datos
 
-  const arreglo = num.split("") // []
+ /* const arreglo = num.split("") // []
   let resultadoFinal = 0
   // por cada uno voy a hacer una operacion matematica
   for (let i = 0; i < arreglo.length; i++){
@@ -14,8 +14,13 @@ function BinarioADecimal(num) {
   } 
   
   return resultadoFinal
-
-
+*/
+  var array = num.split("")
+  var suma = 0
+  for (var i=0; i<array.length; i++){
+    suma = suma + Math.pow(2,array.length-1-i) * array[i]
+  }
+  return suma
 }
 
 function DecimalABinario(num) {
